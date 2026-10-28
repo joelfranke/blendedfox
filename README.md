@@ -21,10 +21,7 @@ Wrangler prints a `localhost` URL. Open it to review the site.
 
 Until the custom domain is attached, Cloudflare will serve the Worker on a `*.workers.dev` URL.
 
-Pushing to `main` can also deploy via `.github/workflows/deploy.yml`. Add these repository secrets:
-
-- `CLOUDFLARE_API_TOKEN`
-- `CLOUDFLARE_ACCOUNT_ID`
+You can also connect this GitHub repo in the Cloudflare dashboard so pushes to `main` deploy the Worker automatically.
 
 ## What’s here
 
