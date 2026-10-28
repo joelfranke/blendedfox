@@ -61,7 +61,7 @@ h3 {
 
 h1 {
   font-size: clamp(2.4rem, 6vw, 4.6rem);
-  max-width: 14ch;
+  max-width: 18ch;
 }
 
 h2 {
@@ -132,21 +132,14 @@ p:last-child {
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
   text-decoration: none;
   min-width: 0;
 }
 
-.brand__mark {
-  width: 3.4rem;
-  height: auto;
-  color: var(--ink);
-}
-
-.brand__name {
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  font-size: 1.15rem;
+.brand__logo {
+  height: 2.15rem;
+  width: auto;
+  max-width: min(13.5rem, 58vw);
 }
 
 .nav {
@@ -294,12 +287,18 @@ p:last-child {
   flex-direction: column;
   min-height: 100%;
   box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
   transition: transform 180ms ease, border-color 180ms ease;
 }
 
 .work-card:hover {
   transform: translateY(-3px);
   border-color: #c9b8a6;
+}
+
+.work-card:hover .work-card__tags {
+  color: var(--fox) !important;
 }
 
 .work-card__meta {
@@ -368,11 +367,6 @@ p:last-child {
 
 .about-copy {
   max-width: 40rem;
-}
-
-.about-copy__legal {
-  color: var(--ink) !important;
-  font-weight: 650;
 }
 
 .contact {
@@ -452,6 +446,10 @@ p:last-child {
 }
 
 @media (min-width: 980px) {
+  .capability-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .steps {
     grid-template-columns: repeat(3, 1fr);
   }

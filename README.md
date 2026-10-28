@@ -1,6 +1,6 @@
 # BlendedFox
 
-Public website for [blendedfox.com](https://blendedfox.com), a boutique web and software studio. BlendedFox is a DBA of Circle Up Stories.
+Public website for [blendedfox.com](https://blendedfox.com). We make apps, backend services, and full-stack websites.
 
 The site is static HTML, CSS, and a small amount of JavaScript, served by a [Cloudflare Worker](https://developers.cloudflare.com/workers/static-assets/) with static assets.
 

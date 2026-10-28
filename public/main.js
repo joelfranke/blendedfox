@@ -1,10 +1,9 @@
 (() => {
   const header = document.querySelector("[data-header]");
-  const year = document.querySelector("[data-year]");
 
-  if (year) {
-    year.textContent = String(new Date().getFullYear());
-  }
+  document.querySelectorAll("[data-year]").forEach((el) => {
+    el.textContent = String(new Date().getFullYear());
+  });
 
   if (!header) return;
 
